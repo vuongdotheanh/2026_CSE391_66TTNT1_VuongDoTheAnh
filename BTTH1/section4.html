@@ -1,15 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Basic Info</h1>
-    <form action="">
-        <label for="Employee ID">Employee ID:</label>
-        <input type = "text" id="id" name="id" 
-    </form>
+
+<div class="form-container">
+    
+    <h3 class="section-title">Basic Info</h3>
+    <hr>
+    
+    <table class="form-table">
+        <tr>
+            <td class="label">Employee ID</td>
+            <td><b>9</b></td>
+        </tr>
+        <tr>
+            <td class="label">Last Name</td>
+            <td><b>Dodsworth</b></td>
+        </tr>
+        <tr>
+            <td class="label">First Name</td>
+            <td><input type="text" value="Anne"></td>
+        </tr>
+        <tr>
+            <td class="label">Gender</td>
+            <td>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label><br>
+                    <label><input type="radio" name="gender" value="female"> Female</label><br>
+                    <label><input type="radio" name="gender" value="xxx"> XXX</label><br>
+                    <label><input type="radio" name="gender" value="zzz" checked> ZZZ</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Title</td>
+            <td><input type="text" value="Sales Representative"></td>
+        </tr>
+        <tr>
+            <td class="label">Suffix</td>
+            <td><input type="text" value="Ms."></td>
+        </tr>
+        <tr>
+            <td class="label">BirthDate</td>
+            <td>
+                <input type="text" value="1969-07-02 00:00:00">
+                <span class="icon">(?)</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">HireDate</td>
+            <td><input type="text" value="1994-11-15 00:00:00"></td>
+        </tr>
+        <tr>
+            <td class="label">SSN # (if applicable)</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="label">Reports To</td>
+            <td>
+                <select>
+                    <option>Buchanan</option>
+                    <option>Davolio</option>
+                    <option>Fuller</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <h3 class="section-title">Contact Info</h3>
+    <hr>
+
+    <table class="form-table">
+        <tr>
+            <td class="label">Email</td>
+            <td><input type="text" placeholder="name@example.com"></td>
+        </tr>
+        <tr>
+            <td class="label">Address</td>
+            <td><input type="text" value="7 Houndstooth Rd."></td>
+        </tr>
+        <tr>
+            <td class="label">City</td>
+            <td><input type="text" value="London"></td>
+        </tr>
+        <tr>
+            <td class="label">Region</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="label">Postal Code</td>
+            <td><input type="text" value="WG2 7LT"></td>
+        </tr>
+        <tr>
+            <td class="label">Country</td>
+            <td>
+                <select>
+                    <option>Russian Federation</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">US Home Phone</td>
+            <td><input type="text" value="(234)234-2342"></td>
+        </tr>
+        <tr>
+            <td class="label">Photo</td>
+            <td><input type="text" value="EmpID9.bmp"></td>
+        </tr>
+    </table>
+
+    <h3 class="section-title">Optional Info</h3>
+    <hr>
+    
+    <div class="editor">
+        <div class="toolbar">
+            <button><b>B</b></button>
+            <button><i>I</i></button>
+            <button><u>U</u></button>
+            <button>Align Left</button>
+            <button>Align Center</button>
+        </div>
+        <textarea rows="5"></textarea>
+    </div>
+
+</div>
+
 </body>
 </html>
