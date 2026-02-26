@@ -1,18 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: #f0f0f0;
+    
     font-family: Arial, sans-serif;
 }
 header {
+    background-image: url(images/ocean.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 a {
     text-decoration: none;
-    
+}
+#page-logo a{
+    color: rgb(240, 237, 104);
+    font-family: 'Oleo Script', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+nav{
+    padding: 20px;
 }
 nav ul {
     display: flex;
+    list-style: none;
     gap: 20px;
-    font-weight: bold;
+}
+nav ul li a {
+    color: rgb(193, 196, 39);
+    font-size: 18px;
+}
+/* hop den chua nd */
+#hero-content {
+    background-color: rgba(50, 50, 50, 0.85);
+    padding: 40px 40px;
+    text-align: center;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 30px 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* chu tren hop */
+#hero-content h1{
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#hero-content p {
+    color: rgb(138, 134, 134);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#hero-content a{
+    display: inline-block;
+    color: rgb(114, 106, 106);
+    background-color: rgb(233, 236, 46);
+    padding: 15px 30px;
+    border-radius: 4px;
+}
+#hero {
+    background-image: url("images/ocean.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* high lights */
+#highlights h2 {
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+#destinations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 40px;
+    text-align: center;
+}
+.destination img {
+    width: 550px;      
+    height: 100px;    
+    object-fit: cover; 
+    border-radius: 10px; 
+    
+}
+.destination p {
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.destination p strong {
+    color: rgb(44, 153, 108);
+}
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column-reverse;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+footer ul {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+}
+main {
+    background-color: rgb(193, 247, 247);
 }
