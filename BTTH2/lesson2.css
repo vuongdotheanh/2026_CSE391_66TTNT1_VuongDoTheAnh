@@ -1,0 +1,18 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
