@@ -1,0 +1,166 @@
+/* TOÀN BỘ PHẦN TRANG TRÍ GIỐNG HỆT FILE GỐC */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf4e8;
+    margin: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #ffb6b6;
+}
+
+h1 {
+    color: #c41e1e;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 3px solid #ff9933;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #b33100;
+    background: #ffeecc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* MENU */
+.menu {
+    background: #cc3333;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background: #ff9933;
+    border-radius: 20px;
+}
+
+/* CONTENT */
+.content {
+    background: #fff7e6;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ffaa66;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px;
+    margin: 8px 0;
+    background: #ffe4cc;
+    border-radius: 25px;
+    border-left: 10px solid #ff6633;
+    font-size: 18px;
+}
+
+/* IMAGE GALLERY */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.image-item {
+    width: 220px;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ff9933;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.image-item img:hover {
+    transform: scale(1.08);
+}
+
+.image-item p {
+    font-weight: bold;
+    color: #b33100;
+}
+
+/* VIDEO */
+.video-container {
+    margin: 25px 0;
+    padding: 15px;
+    background: #ffdbaf;
+    border-radius: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid #3ba054;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* CÁC PHẦN CÒN LẠI */
+.wish-box {
+    background:#ffeb99; 
+    padding:15px; 
+    border-radius:10px; 
+    font-size:20px; 
+    text-align:center;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background: #cc3333;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ff9933;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #cc3333;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
