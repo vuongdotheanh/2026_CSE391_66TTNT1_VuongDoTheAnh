@@ -1,4 +1,4 @@
-/* TOÀN BỘ PHẦN TRANG TRÍ GIỐNG HỆT FILE GỐC */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     background: white;
     padding: 20px;
@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    color: #c41e1e;
+    color: #ca5353;
     text-align: center;
     font-size: 40px;
     border-bottom: 3px solid #ff9933;
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-    color: #b33100;
+    color: #b96b4e;
     background: #ffeecc;
     padding: 10px;
     border-radius: 10px;
@@ -32,7 +32,7 @@ h2 {
 
 /* MENU */
 .menu {
-    background: #cc3333;
+    background: #743535;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
@@ -49,7 +49,7 @@ h2 {
 }
 
 .menu a:hover {
-    background: #ff9933;
+    background: #36b456;
     border-radius: 20px;
 }
 
@@ -104,7 +104,7 @@ li {
 
 .image-item p {
     font-weight: bold;
-    color: #b33100;
+    color: #c5542b;
 }
 
 /* VIDEO */
@@ -143,7 +143,7 @@ li {
     display: block;
     margin: 20px auto;
     padding: 12px 25px;
-    background: #cc3333;
+    background: #c54242;
     color: white;
     border: none;
     border-radius: 20px;
@@ -152,14 +152,14 @@ li {
 }
 
 .btn:hover {
-    background: #ff9933;
+    background: #1fa060;
 }
 
 .footer {
     text-align: center;
     margin-top: 20px;
     padding: 15px;
-    background: #cc3333;
+    background: #5e2020;
     color: white;
     border-radius: 10px;
     font-weight: bold;
