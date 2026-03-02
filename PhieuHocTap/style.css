@@ -29,3 +29,110 @@ a:hover {
     color: #ff6600;
     background-color: #eee;
 }
+*{
+    box-sizing: border-box;
+}
+.posts {
+    display: flex;
+    margin: 20px 100px;
+    max-width: 1500px;
+}
+.card  {
+    background: white;
+    display: inline-block;
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+}
+.btn:hover {
+    background: #0056b3;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 15px;
+}
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.card {
+    flex: 0 0 cacl(33.333% - 20px);
+
+}
+@media (max-width: 768px) {
+    .posts {
+        flex-direction: column;
+        
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1200px;
+    margin: 40px auto;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.scroll-top:hover {
+    background-color: #0056b3;
+    transform: scale(1.2);
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    
+}
