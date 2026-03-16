@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="lession2.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Đăng kí tài khoản</h1>
+    </header>
+
+    <form action="register" id="register-form">
+        
+        <div class="form-group" style="margin-bottom: 15px;">
+            <label for="name">Họ tên</label><br>
+            <input type="text" id="name" placeholder="Nhập họ tên..">
+            <br><span id="error-name" style="color: red; display: none;">Họ tên không được để trống</span>
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 15px;">
+            <label for="phone">Số điện thoại</label><br>
+            <input type="tel" id="phone" placeholder="Nhập 10 số bắt đầu bằng số 0....">
+            <br><span id="error-phone" style="color: red; display: none;">Số điện thoại không hợp lệ</span>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 15px;">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="name@domain.com">
+            <br><span id="error-email" style="color: red; display: none;">Email sai định dạng</span>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 15px;">
+            <label for="ps">Mật khẩu</label><br>
+            <input type="password" id="ps" placeholder="≥ 8 ký tự, 1 hoa, 1 thường, 1 số ">
+            <br><span id="error-ps" style="color: red; display: none;">Mật khẩu chưa đủ mạnh</span>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 15px;">
+            <label for="ps-confirm">Nhập lại mật khẩu</label><br>
+            <input type="password" id="ps-confirm" placeholder="Nhập lại mật khẩu ở trên">
+            <br><span id="error-ps-confirm" style="color: red; display: none;">Mật khẩu không khớp</span>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 15px;">
+            <label>Giới tính:</label>
+            
+            <input type="radio" id="nam" name="gioitinh" value="Nam">
+            <label for="nam">Nam</label>
+            
+            <input type="radio" id="nu" name="gioitinh" value="Nữ">
+            <label for="nu">Nữ</label>
+            
+            <br><span id="error-gender" style="color: red; display: none;">Vui lòng chọn giới tính</span>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 15px;">
+            <input type="checkbox" id="dieu-khoan">
+            <label for="dieu-khoan">Chấp nhận điều khoản</label>
+            <br><span id="error-check" style="color: red; display: none ">Vui lòng đồng ý điều khoản</span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="btn-submit">Đăng ký ngay</button>
+        </div>
+
+    </form>
+    
+    <script src="lession2.js"></script>
+</body>
+</html>

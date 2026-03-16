@@ -16,12 +16,25 @@
     </header>
     <!-- end header -->
      <main>
+        <!-- search -->
+        
+         
+         <div>
+            <select id="filter">
+            <option value="all">Lọc theo xếp loại</option>
+            <option value="giỏi">Giỏi</option>
+            <option value="khá">Khá</option>
+            <option value="yếu">Yếu</option>
+         </select>
+         <input type="search" id ="search" placeholder="Nhập tên cần tìm...">
+         <button id="btn-search">Tìm Kiếm</button>
+         </div>
         <table border="1px" >
             <thead>
                 <tr>
                 <th>STT</th>
                 <th>Họ và tên</th>
-                <th>Điểm</th>
+                <th id ="sort-diem">Điểm <span id="sort-icon"></span></th>
                 <th>Xếp loại</th>
                 <th>Thao tác
                 </th>
@@ -31,7 +44,14 @@
                 
             </tbody>
         </table>
+        <div id="thong-ke">
+            <p id="no-rs">Không thấy kết quả</p>
+            <p>Tổng số sinh viên: <span id="tong-sv">0</span>
+            </p>
+            <p>DTB: <span id="dtb">0.0</span></p>
+        </div>
      </main>
+
      <script src="lession1.js"></script>
 </body>
 </html>
