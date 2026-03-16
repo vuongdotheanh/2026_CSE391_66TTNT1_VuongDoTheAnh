@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đặt Hàng Trực Tuyến</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        .error-msg { color: red; display: none; }
+        .form-group { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h2>ĐƠN ĐẶT HÀNG</h2>
+    <form id="order-form">
+        <div class="form-group">
+            <label for="product">Tên sản phẩm (*):</label><br>
+            <select id="product">
+                <option value="">-- Chọn sản phẩm --</option>
+                <option value="iphone15">Điện thoại iPhone 15</option>
+                <option value="macbook">Laptop Macbook Air</option>
+                <option value="airpods">Tai nghe Airpods Pro</option>
+            </select>
+            <br><span id="error-product" class="error-msg">Vui lòng chọn sản phẩm!</span>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Số lượng (*):</label><br>
+            <input type="number" id="quantity" min="1" max="99" placeholder="Từ 1 đến 99">
+            <br><span id="error-quantity" class="error-msg">Số lượng phải từ 1 đến 99!</span>
+            <h3 style="color: blue;" id="total-price">Tổng tiền: 0 VNĐ</h3>
+        </div>
+
+        <div class="form-group">
+            <label for="delivery-date">Ngày giao hàng (*):</label><br>
+            <input type="date" id="delivery-date">
+            <br><span id="error-date" class="error-msg">Ngày giao không hợp lệ!</span>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Địa chỉ giao hàng (*):</label><br>
+            <textarea id="address" rows="3" cols="30" placeholder="Nhập địa chỉ..."></textarea>
+            <br><span id="error-address" class="error-msg">Địa chỉ phải từ 10 ký tự trở lên!</span>
+        </div>
+
+        <div class="form-group">
+            <label for="notes">Ghi chú: <span id="char-count" style="font-weight: normal; color: gray;">(0/200)</span></label><br>
+            <textarea id="notes" rows="2" cols="30" placeholder="Lưu ý cho shipper..."></textarea>
+            <br><span id="error-notes" class="error-msg">Ghi chú không được quá 200 ký tự!</span>
+            
+        </div>
+
+        <div class="form-group">
+            <label>Phương thức thanh toán (*):</label><br>
+            <input type="radio" name="payment" id="pay-cod" value="COD"> <label for="pay-cod">COD</label><br>
+            <input type="radio" name="payment" id="pay-bank" value="Bank"> <label for="pay-bank">Chuyển khoản</label><br>
+            <input type="radio" name="payment" id="pay-wallet" value="Wallet"> <label for="pay-wallet">Ví điện tử</label><br>
+            <span id="error-payment" class="error-msg">Vui lòng chọn phương thức thanh toán!</span>
+        </div>
+
+        <button type="submit" id="btn-submit">Xác nhận đặt hàng</button>
+    </form>
+
+    <div id="confirm-modal" style="display: none; border: 2px solid #28a745; padding: 15px; margin-top: 20px; background-color: #e9f7ef; width: fit-content;">
+        <h3>Xác nhận thông tin đặt hàng</h3>
+        <p id="confirm-details"></p> <button type="button" id="btn-confirm" style="background-color: #28a745; color: white; padding: 10px; border: none; cursor: pointer;">Đồng ý đặt hàng</button>
+        <button type="button" id="btn-cancel" style="padding: 10px; cursor: pointer;">Hủy, sửa lại</button>
+    </div>
+
+    <script src="lession22.js"></script>
+</body>
+</html>
