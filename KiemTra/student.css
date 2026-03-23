@@ -1,0 +1,87 @@
+body {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+/* Khung viền lớn bao bọc toàn trang */
+.list-container {
+    background-color: #ffffff;
+    max-width: 1000px; /* Khung danh sách thường rộng hơn khung form một chút */
+    margin: 0 auto;
+    border: 1px solid #333; /* Viền đen đậm giống mẫu */
+}
+
+/* Phần Header */
+.list-header {
+    padding: 15px 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.list-header h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Các nút trên Header */
+.btn-filter {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #555;
+    margin-right: 10px;
+}
+
+.btn-add {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+}
+.btn-add:hover { background-color: #0b5ed7; color: white;}
+
+/* Giao diện từng hàng sinh viên */
+.student-item {
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Chữ họ tên in đậm */
+.student-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Các dòng thông tin chi tiết (Mã SV, Email...) */
+.student-details {
+    font-size: 13px;
+    color: #777; /* Màu xám mờ giống mẫu */
+    margin: 3px 0;
+}
+
+/* Nút Sửa và Xóa */
+.btn-edit-sv {
+    background-color: #ffc107; /* Màu vàng */
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.btn-delete-sv {
+    background-color: #dc3545; /* Màu đỏ */
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+/* Chữ footer dưới cùng */
+.list-footer {
+    padding: 20px;
+    font-size: 13px;
+    color: #888;
+}

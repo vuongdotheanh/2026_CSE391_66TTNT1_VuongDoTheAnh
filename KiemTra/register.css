@@ -1,0 +1,64 @@
+/* Thiết lập nền chung cho trang web */
+body {
+    
+    background-color: #f8f9fa; /* Màu xám rất nhạt, giúp khung trắng nổi bật lên */
+    padding: 40px 50px; /* Tạo khoảng cách trống ở trên/dưới và 2 bên mép màn hình */
+}
+
+
+.form-container {
+    background-color: #ffffff;
+    max-width: 800px; 
+    margin: 0 auto; 
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+/* Phần chữ Student Management ở trên cùng */
+.form-header {
+    padding: 15px 30px; 
+    border-bottom: 1px solid #f0f0f0; 
+    margin-bottom: 30px; 
+}
+
+.form-header h3 {
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+    font-weight: normal; /* Không in đậm */
+}
+
+/* Phần chứa các ô nhập liệu bên trong */
+.form-body {
+    padding: 0 40px 40px 40px; /* Cách lề trong cho rộng rãi */
+}
+
+/* Chữ "Đăng ký/Sửa thông tin Sinh viên" */
+h2.title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 35px; /* Cách xa các ô nhập liệu ở dưới */
+}
+
+/* Các chữ "Họ và tên", "Email"... nằm trên các ô nhập */
+.form-label {
+    font-size: 13px;
+    color: #555; /* Màu xám đậm */
+    margin-bottom: 8px; /* Khoảng cách giữa chữ và ô nhập */
+    font-weight: 500;
+}
+
+/* Các nút bấm */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 10px 20px;
+}

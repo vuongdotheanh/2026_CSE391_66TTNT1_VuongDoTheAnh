@@ -1,0 +1,71 @@
+*{
+  font-family:Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+  background-color: linear-gradient(135deg, #6a5acd, #4facfe);
+}
+.main-box{
+  background: rgb(240, 237, 237);
+  max-width: 1000px;
+  margin: 40px auto;
+  padding:20px;
+  border-radius: 7px;
+}
+h2 {
+  text-align: center;
+  color: rgb(93, 93, 95);
+}
+.table-1 {
+  background: linear-gradient(90deg, #2789b6, #242eb4);
+}
+.pe {
+    background: linear-gradient(90deg, #ff6a6a, #4ecdc4);
+    
+    
+    text-align: center;
+    border-radius: 5px;
+}
+#thongtin {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+#thead {
+  background: linear-gradient(90deg, #6a5acd, #4facfe);
+  color: white;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f2f2f7;
+  padding: 25px;
+  border-radius: 20px;
+  width: 420px;
+  z-index: 1000;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+.form-popup input, select {
+  width: 100%;
+  border-radius: 5px;
+  
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.form-popup label{
+  font-size: 13px;
+}
+.btn-btn{
+  text-align: center;
+  width:100%;
+  height :auto;
+}

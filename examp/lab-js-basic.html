@@ -1,18 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cửa Hàng Điện Thoại</title>
+<meta charset="UTF-8">
+<title>MockAPI Test</title>
+<link rel="stylesheet" href="styleex.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.user-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    font-weight: bold;
+}
+</style>
 </head>
+
 <body>
-    <h2>Danh sách Điện Thoại</h2>
-    
-    <button id="btn-tat-ca">Hiện tất cả</button>
-    <button id="btn-gia-re">Chỉ xem máy DƯỚI 10 triệu</button>
-    <button id="btn-sap-xep">Sắp xếp giá Tăng Dần</button>
 
-    <ul id="danh-sach-sp">
-        </ul>
+<h1>Danh sách Users</h1>
 
-    <script src="main.js"></script>
+<button onclick="getUsers()">Load Users</button>
+
+<ul id="list"></ul>
+
+<script>
+
+function getUsers(){
+
+fetch("https://69b8a465e69653ffe6a50a80.mockapi.io/user/v1/user")
+.then(res => res.json())
+.then(data => {
+
+console.log(data)
+
+let html = ""
+
+data.forEach(user => {
+
+html += `<li class="user-card">
+<div class="user-info">
+ID: ${user.id} | Name: ${user.name} | Age: ${user.age}
+</div>
+</li>`
+
+})
+
+document.getElementById("list").innerHTML = html
+
+})
+
+}
+
+</script>
+
 </body>
 </html>
