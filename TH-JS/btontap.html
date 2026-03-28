@@ -1,94 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ktra1.css">
 </head>
-
 <body>
-    <div class="main-box">
-
-        <h2>STUDENT MANAGEMENT SYSTEM</h2>
-        <div class="pe">
-            <P>Tổng số sinh viên: <span id=total>0</span> |
-                Điểm trung bình lớp <span id="score">0.0</span></P>
+    <header class="header-container">
+        <h3>Student Management</h3>
+        <div class="btn-group">
+        <button class="btn filter">Filter</button>
+        <button class="btn btn-add">+ Add Student</button>
         </div>
+    </header>
+    <!-- end header -->
+     <main>
+        <div class="list-sv" id="list">
 
-        <!-- end header -->
-
-        <main>
-            <div class="button">
-                <button class="btn btn-success" id="add-sv">Thêm sinh viên</button>
-            </div>
-            <!-- bảng -->
-            <div class="table">
-                <table border=1 id="thongtin" class="table-1">
-                    <thead id="thead">
-                        <tr>
-                            <th>#</th>
-                            <th>Mã SV</th>
-                            <th>Họ và tên</th>
-                            <th>Ngày Sinh</th>
-                            <th>Lớp</th>
-                            <th>ĐTB</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="tbody">
-                        <!-- jss -->
-                    </tbody>
-
-
-                </table>
-            </div>
-            <!-- end -->
-
-            <!-- form popup -->
-            <form id="formBox" class="form-popup">
-                <h4>Thêm/Sửa Sinh Viên</h4>
-                <label for="msv">MÃ SINH VIÊN *</label>
-                <br>
-                <input type="text" id="msv" placeholder="VD: SV123456">
-                <br>
-                <label for="fullname">HỌ VÀ TÊN *</label>
-                <br>
-                <input type="text" id="fullname">
-                <br>
-                <label for="date-time">NGÀY SINH *</label> <br>
-                <input type="date" id="date-time"> <br>
-                <label for="class-name">LỚP HỌC *</label> <br>
-                <select name="class-name" id="class-name">
-                    <option value="class-name">Chọn lớp</option>
-                    <option value="class-name">A</option>
-                    <option value="class-name">B</option>
-                    <option value="class-name">C</option>
-                    <option value="class-name">D</option>
-                </select> <br>
-                <label for="email">EMAIL SINH VIÊN *</label><br>
-                <input type="email" id="email" placeholder="@student.edu.vn"> <br>
-                <label for="pass">MẬT KHẨU TÀI KHOẢN *</label> <br>
-                <input type="password" id="pass" placeholder="Tối thiểu 8 kí tự"> <br>
-                <label for="confirm-pass">XÁC NHẬN MẬT KHẨU *</label> <br>
-                <input type="password" id="confirm-pass"> <br>
-
-                <div class="btn-btn">
-                    <button class="btn btn-success" id="save">LƯU SINH VIÊN</button>
-                    <button class="btn btn-danger" id="cancel">HỦY</button>
-                </div>
-            </form>
-        </main>
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+        </div>
+    </main>
+    <!-- end main -->
+     <footer>
+        <span id="fter">Showing 0 to 0 of 5 entries</span>
+     </footer>
 </body>
-
 </html>

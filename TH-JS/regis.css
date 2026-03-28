@@ -1,0 +1,10 @@
+
+
+body {
+    
+    background-color: #f8f9fa; /* Màu xám rất nhạt, giúp khung trắng nổi bật lên */
+    padding: 40px 50px; /* Tạo khoảng cách trống ở trên/dưới và 2 bên mép màn hình */
+}
+.container {
+    max-width: 800px;
+}
